@@ -1,0 +1,141 @@
+/* helping colours
+.profile {
+  background-color: rgba(206, 214, 66, 0.6);
+}
+.profile-card, .links {
+  background-color: rgba(0, 255, 66, 0.6);
+}
+
+.photo, .connector, .description {
+  background-color: rgba(255,0, 255, 0.6);
+}
+h1, .about {
+  background-color: rgba(255, 0, 0, 0.6);
+} */
+
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;  
+  font-size: 100%;
+}
+
+body {
+  background: black;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;;
+  line-height: 1.5;
+  height: 100%;
+  width: 100%;
+}
+
+.connector {
+  background-color: #c28f10;
+  box-shadow: #c28f10 0 0 0 7px, 10px 10px 80px #666;;
+  height: 15px;
+  width: 15px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.profile {  
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  filter: sepia(30%);
+  height: auto;
+  width: 300px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+  filter: sepia(0%);
+}
+
+.photo, .description {  
+  border: 10px solid #c28f10;
+  border-radius: 50%;
+  box-shadow: 10px 10px 80px #666;
+  height: 300px;
+  width: 300px;  
+}
+  
+.description { 
+  background-color: rgba(255,255,255, .8); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  filter: blur(0.5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.description:hover {
+  filter: blur(0);
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.about {
+  margin: 0 25px;
+}
+
+.links ul li{  
+  display: inline-block;
+  list-style-type: none;
+  margin: 7px;
+  margin-top: 40px;
+}
+
+.social-icon {
+  color: #666;
+}
+
+.social-icon:hover {
+ color: #c28f10
+}
+
+/* media styles */
+
+@media (min-width: 800px) {
+  .profile-card {
+    flex-direction: row;
+  }
+  
+  .profile {
+    height: 500px;
+    width: 750px;
+  }
+  
+  .links {
+    margin-top: 70px;
+  }
+}
