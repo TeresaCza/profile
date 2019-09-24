@@ -33,7 +33,7 @@ body {
 }
 
 .connector {
-  background-color: #c28f10;
+  background-color: #c28f10;  
   box-shadow: #c28f10 0 0 0 7px, 10px 10px 80px #666;;
   height: 15px;
   width: 15px;
@@ -133,9 +133,6 @@ h1 {
   .profile {
     height: 500px;
     width: 750px;
-  }
+  }  
   
-  .links {
-    margin-top: 70px;
-  }
 }
